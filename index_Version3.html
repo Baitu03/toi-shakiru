@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Линаның Тойына Шақыру</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    }
+    h1 {
+      color: #ffccdd;
+      font-size: 36px;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      text-shadow: 1px 1px 8px #000;
+    }
+    .info {
+      margin: 20px 0;
+      font-size: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.10);
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+      outline: none;
+    }
+    form {
+      margin-top: 30px;
+      text-align: left;
+      background: rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+    }
+    form h2 {
+      text-align: center;
+      color: #ffccdd;
+      margin-bottom: 20px;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 15px;
+      background: rgba(255,255,255,0.18);
+      color: #333;
+    }
+    form button {
+      width: 100%;
+      background-color: #ffccdd;
+      color: #222;
+      padding: 12px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    form button:hover {
+      background: #ffe2ec;
+    }
+    .footer {
+      margin-top: 30px;
+      font-style: italic;
+      color: #ddd;
+      text-shadow: 1px 1px 8px #000;
+      font-size: 18px;
+    }
+    @media (max-width: 600px) {
+      .overlay {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      .info {
+        font-size: 16px;
+      }
+      iframe {
+        height: 180px;
+      }
+      .footer {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Линаның Тойына Шақыру</h1>
+    <p class="info"><strong>📅 Күні:</strong> 07.06.2025</p>
+    <p class="info"><strong>🕕 Уақыты:</strong> сағат 18:00</p>
+    <p class="info"><strong>📍 Мекен-жай:</strong> Ұзынағаш, Kamelot рестораны</p>
+    <p class="info"><strong>🗺 Толық мекен-жай:</strong> Улица Жанакурлыс, 14</p>
+    <p class="info"><strong>👨‍👩‍👧‍👦 Той иелері:</strong> әкесі Мәдениет, анасы Майнұр, аға-жеңгелері</p>
+
+    <!-- Карта -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.918301474723!2d76.47000000000001!3d43.383333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3882dfcc1fc4e3d9%3A0x123456789abcdef!2sUzynagash%2C%20Almaty%20Region!5e0!3m2!1sen!2skz!4v1685194706801!5m2!1sen!2skz"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <!-- Аудио -->
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+      Сіздің браузеріңіз аудио ойнатуды қолдамайды.
+    </audio>
+
+    <!-- RSVP Форма -->
+    <form action="https://formsubmit.co/baituljan.s@gmail.com" method="POST">
+      <h2>📨 Қатысуыңызды растаңыз:</h2>
+      <label>Аты-жөніңіз:</label>
+      <input type="text" name="Аты-жөні" required>
+      <label>Электронды пошта (қаласаңыз):</label>
+      <input type="email" name="Email">
+      <label>Қатысуыңыз:</label>
+      <select name="Қатысамын ба?" required>
+        <option value="Қатысамын">Қатысамын</option>
+        <option value="Қатыса алмаймын">Қатыса алмаймын</option>
+      </select>
+      <label>Қосымша пікір:</label>
+      <textarea name="Пікір" rows="3"></textarea>
+      <button type="submit">Жіберу</button>
+    </form>
+    <p class="footer">Сізді қуанышымызға ортақ болуға асыға күтеміз!</p>
+  </div>
+</body>
+</html>
